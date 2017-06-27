@@ -1,5 +1,5 @@
 isPrime :: Int -> Bool
-isPrime k = null [ x | x <- [2..k - 1], k `mod`x  == 0]
+isPrime number = null [ x | x <- [2..number - 1], number `mod`x  == 0]
 primoCasado :: Int -> Int -> String
 primoCasado x y
 	| isPrime x && isPrime y = "\"PRIMO CASADO!\""
